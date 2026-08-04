@@ -1,0 +1,37 @@
+---
+import { Font } from "astro:assets";
+
+interface Props {
+	title?: string;
+}
+
+const { title = "Astro" } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<Font cssVariable="--font-neue-montreal-medium" preload />
+		<Font cssVariable="--font-neue-montreal-regular" preload />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	body {
+		font-family: var(--font-neue-montreal-regular);
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: var(--font-neue-montreal-medium);
+	}
+</style>
