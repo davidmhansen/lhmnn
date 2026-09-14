@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "year": "2026",
+    "company": "Shine",
+    "title": "UX/UI Designer",
+    "url": "https://shine.co/dk/"
+  },
+  {
+    "id": "2",
+    "year": "2022-2026",
+    "company": "sevdesk",
+    "title": "UX/UI & Web Designer",
+    "url": "https://sevdesk.de/"
+  },
+  {
+    "id": "3",
+    "year": "2020-2022",
+    "company": "sevdesk",
+    "title": "Product Marketing & CRO Manager",
+    "url": "https://sevdesk.de/"
+  },
+  {
+    "id": "4",
+    "year": "2018-2020",
+    "company": "sevdesk",
+    "title": "Conversion Manager",
+    "url": "https://sevdesk.de/"
+  }
+]

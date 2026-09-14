@@ -1,13 +1,10 @@
 ---
-import { Font } from "astro:assets";
+import "../styles/global.css";
 ---
 
 <html>
-  <head>
-    <Font cssVariable="--font-neue-montreal-regular" />
-    <Font cssVariable="--font-neue-montreal-medium" />
-  </head>
-  <body>
+  <head> </head>
+  <body class="text-sm md:text-sm">
     <slot />
   </body>
 </html>
