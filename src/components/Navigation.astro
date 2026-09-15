@@ -1,0 +1,30 @@
+---
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
+  { href: "/photos", label: "Photos" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<div class="flex flex-col gap-1">
+  <ul class="group/list flex flex-col gap-2 w-max text-end md:text-left">
+    {
+      links.map((link) => (
+        <li>
+          <a
+            class={`group-hover/list:opacity-40 hover:!opacity-100 transition-opacity duration-300 motion-reduce:transition-none ${
+              currentPath === link.href ? "!opacity-100" : "opacity-40"
+            }`}
+            class="group-hover/list:opacity-40 hover:!opacity-100 transition-opacity duration-300 motion-reduce:transition-none"
+            href={link.href}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

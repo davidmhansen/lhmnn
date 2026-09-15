@@ -6,61 +6,45 @@ import jobs from "../data/jobs.json";
 import writings from "../data/writings.json";
 ---
 
-<Layout>
-  <div
-    class="lg:grid lg:grid-flow-col lg:grid-cols-12 flex flex-col lg:gap-4 gap-16"
-  >
-    <div class="flex flex-col col-span-5 md:col-span-6">
-      <a href="/"><h1 class="text-gray-950">David Lehmann</h1></a><span
-        class="text-gray-500"
+<Layout title="David Lehmann - UX/UI Designer">
+  <div class="flex flex-col gap-3 mb-[6rem] lg:mb-[12rem]">
+    <p class="text-gray-500">
+      <span class="text-gray-950"
+        >Welcome to my little corner on the internet.</span
+      > I'm a UX/UI designer at Shine, focused on crafting the best possible web experience
+      for our users. Before that, I worked at sevdesk, sitting at the intersection
+      of design, development, and testing. What drives me is the details people never
+      notice consciously, but always feel. I thrive on seeing projects through end-to-end,
+      from initial concept through iteration to final production.
+    </p>
+    <p class="text-gray-500">
+      I'm on the lookout for my next challenge and always happy to chat.
+      <br /> Say hi via <a
+        href="mailto:david@lhmnn.xyz"
+        class="underline text-gray-950">email</a
+      > or <a
+        href="https://www.linkedin.com/in/david-lehmann-68425b191/"
+        target="_blank"
+        class="underline text-gray-950"
       >
-        Resume
-      </span>
-      <!-- Put profile image here -->
-      <!-- <div class="w-2xs h-[400px] bg-amber-300 mt-16"></div> -->
-    </div>
-    <div class="col-span-6 md:col-span-6">
-      <div class="flex flex-col gap-3 mb-[6rem] lg:mb-[12rem]">
-        <p class="text-gray-500">
-          <span class="text-gray-950"
-            >Welcome to my little corner on the internet.</span
-          > I'm a UX/UI designer at Shine, focused on crafting the best possible web
-          experience for our users. Before that, I worked at sevdesk, sitting at the
-          intersection of design, development, and testing. What drives me is the
-          details people never notice consciously, but always feel. I thrive on seeing
-          projects through end-to-end, from initial concept through iteration to final
-          production.
-        </p>
-        <p class="text-gray-500">
-          I'm on the lookout for my next challenge and always happy to chat.
-          <br /> Say hi via <a
-            href="mailto:david@lhmnn.xyz"
-            class="underline text-gray-950">email</a
-          > or <a
-            href="https://www.linkedin.com/in/david-lehmann-68425b191/"
-            target="_blank"
-            class="underline text-gray-950"
-          >
-            LinkedIn
-          </a>
-          .
-        </p>
-      </div>
-      <div class="flex flex-col gap-20">
-        <div class="flex flex-col gap-20">
-          <JobList items={jobs} />
-          <div class="flex flex-col gap-4">
-            <span class="text-gray-500">Education</span>
-            <div class="grid grid-cols-6 gap-2">
-              <p class="col-span-3">Medien und Informationswesen, B.Sc.</p>
-              <p class="col-span-2">Hochschule Offenburg</p>
-              <p class="col-span-1 text-end tabular-nums">2018</p>
-            </div>
-          </div>
-          <WritingsList writings={writings} />
+        LinkedIn
+      </a>
+      .
+    </p>
+  </div>
+  <div class="flex flex-col gap-20">
+    <div class="flex flex-col gap-20">
+      <JobList items={jobs} />
+      <div class="flex flex-col gap-4">
+        <span class="text-gray-500">Education</span>
+        <div class="grid grid-cols-6 gap-2">
+          <p class="col-span-3">Medien und Informationswesen, B.Sc.</p>
+          <p class="col-span-2">Hochschule Offenburg</p>
+          <p class="col-span-1 text-end tabular-nums">2018</p>
         </div>
       </div>
+      <WritingsList writings={writings} />
     </div>
-    <style></style>
   </div>
 </Layout>
+<style></style>
