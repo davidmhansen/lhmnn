@@ -9,7 +9,7 @@ const links = [
 const currentPath = Astro.url.pathname;
 ---
 
-<div class="flex flex-col gap-1">
+<div class="flex flex-col gap-1 md:fixed md:mt-32">
   <ul class="group/list flex flex-col gap-2 w-max text-end md:text-left">
     {
       links.map((link) => (
