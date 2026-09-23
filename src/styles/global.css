@@ -22,3 +22,8 @@ body {
   color: #1b1b1b;
   background-color: #fcfcfc;
 }
+
+::selection {
+  background-color: #000; /* highlight color */
+  color: #e2e2e2; /* text color while selected */
+}
